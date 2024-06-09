@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -32,16 +32,19 @@ body {
 .login-form h2 {
     margin-bottom: 20px;
     color: #fff;
+    font-weight: 500;
 }
 
 .input-group {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .input-group label {
     display: block;
     margin-bottom: 5px;
     color: #fff;
+    font-weight: 400;
 }
 
 .input-group input {
@@ -53,11 +56,25 @@ body {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     color: #333;
+    font-size: 14px;
 }
 
 .input-group input:focus {
     outline: none;
     background: rgba(255, 255, 255, 0.7);
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: right;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }
 
 button {
@@ -70,8 +87,56 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-weight: 500;
 }
 
 button:hover {
     background: linear-gradient(135deg, #4158d0, #c850c0);
+}
+
+.alternative-login {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.alternative-login p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icon {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-size: 14px;
+}
+
+.social-icon.google {
+    background: #db4437;
+}
+
+.social-icon.google:hover {
+    background: #c23321;
+}
+
+.social-icon.github {
+    background: #333;
+}
+
+.social-icon.github:hover {
+    background: #242424;
+}
+
+.social-icon.linkedin {
+    background: #0077b5;
+}
+
+.social-icon.linkedin:hover {
+    background: #005582;
 }
